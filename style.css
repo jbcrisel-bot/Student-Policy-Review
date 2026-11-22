@@ -1,0 +1,127 @@
+/* Basic page settings */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5f7fa;
+    color: #202b38;
+    line-height: 1.7;
+}
+
+/* Header */
+header {
+    background-color: #14283f;
+    color: white;
+    padding: 25px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 22px;
+    margin: 0;
+}
+
+nav a {
+    color: #dbe5f0;
+    text-decoration: none;
+    margin-left: 24px;
+}
+
+nav a:hover {
+    color: white;
+}
+
+/* Main content */
+main {
+    max-width: 900px;
+    margin: auto;
+    padding: 30px 24px;
+}
+
+section {
+    margin-bottom: 55px;
+}
+
+/* Hero section */
+.hero {
+    background-color: #e7edf4;
+    padding: 65px 40px;
+    border-radius: 12px;
+}
+
+.eyebrow,
+.category {
+    color: #526b86;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+}
+
+.hero h2 {
+    font-size: 40px;
+    line-height: 1.2;
+    max-width: 650px;
+    color: #14283f;
+}
+
+.hero > p:last-child {
+    max-width: 600px;
+}
+
+/* Research papers */
+.paper {
+    background-color: white;
+    padding: 25px;
+    margin: 20px 0;
+    border: 1px solid #e1e6ec;
+    border-radius: 10px;
+}
+
+.paper h3 {
+    color: #14283f;
+    margin-top: 5px;
+}
+
+.status {
+    color: #64748b;
+    font-size: 14px;
+}
+
+/* Contact */
+#contact a {
+    color: #28547c;
+}
+
+/* Footer */
+footer {
+    background-color: #14283f;
+    color: #cbd5e1;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+}
+
+/* Phones */
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav a {
+        margin: 0 8px;
+    }
+
+    .hero {
+        padding: 35px 25px;
+    }
+
+    .hero h2 {
+        font-size: 30px;
+    }
+}
